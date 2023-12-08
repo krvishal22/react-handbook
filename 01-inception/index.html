@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="js-root"></div>
+    <div id="root"></div>
+
+    <!-- in case of JS -->
+    <script>
+      const jsHeading = document.createElement("h1");
+      jsHeading.innerHTML = "Hello World!";
+      const jsRoot = document.getElementById("js-root");
+      jsRoot.appendChild(jsHeading)
+    </script>
+
+    <!-- in case of react using cdn (provide us the react feature by accessing the url where this library has been hosted)-->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script>
+      const heading = React.createElement("h1", {}, "Hello from React");
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(heading);
+    </script>
+  </body>
+</html>
