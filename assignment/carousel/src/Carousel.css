@@ -1,0 +1,23 @@
+.carousel-container{
+   display: flex;
+}
+
+.carousel-image{
+    height: 350px;
+    width: 600px;
+}
+
+.active{
+    display: block;
+}
+
+.disable{
+    display: none;
+}
+
+button{
+    margin: 0 10px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
