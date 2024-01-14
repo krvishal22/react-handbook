@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  border: 1px solid #777;
+  box-shadow:0 4px 8px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem;
+  .logo-container{
+    display: flex;
+    align-items: center;
+    .logo {
+        width: 40px;
+        height: 40px;
+      }
+      .title{
+        margin-left: .5rem;
+        font-weight: bold;
+      }
+  }
+  
+  .nav-items{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+  }
+}
